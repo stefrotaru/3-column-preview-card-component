@@ -1,4 +1,79 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    height: 100vh;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: hsl(0, 0%, 95%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    width: 65rem;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid__column {
+    /* display: grid; */
+    padding: 1rem 2rem 3rem 2rem;
+}
+.sedans-container {
+    background-color: hsl(31, 77%, 52%);
+}
+.suvs-container {
+    background-color: hsl(184, 100%, 22%);
+    
+}
+.luxury-container {
+    background-color: hsl(179, 100%, 13%);
+
+}
+
+.grid__row-title {
+    padding: 2rem 2rem 0 2rem;
+    
+    font-family: 'Big Shoulders Display', cursive;
+}
+.title {
+    padding-top: 2rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+.grid__row-description {
+    color: hsla(0, 0%, 100%, 0.75);
+    height: 10rem;
+    padding: 2rem;
+    line-height: 1.7rem;
+}
+.grid__row-button {
+    background-color: hsl(0, 0%, 95%);
+    margin-left: 2rem;
+    border: 1px solid white;
+    border-radius: 2rem;
+    width: fit-content;
+    text-align: center;
+    padding: 1rem 2rem 1rem 2rem;
+
+    cursor: pointer;
+
+    color: black; /* test */
+}
+.grid__row-button:hover {
+    
+}
 
 
 
@@ -20,5 +95,5 @@
 
 
 /* Given footer */
-.attribution { font-size: 11px; text-align: center; }
+.attribution { color: black;font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
