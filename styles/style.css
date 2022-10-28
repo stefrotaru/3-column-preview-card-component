@@ -79,13 +79,13 @@ body {
     font-weight: 500;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 1045px) {
     body {
         height: auto;
     }
 
     .grid {
-        width: 22rem;
+        width: 30rem;
         display: block;
     }
 
@@ -95,6 +95,24 @@ body {
 
     .grid__row-description {
         padding: 2rem 2rem 0rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .grid {
+        width: 26rem;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .grid {
+        width: 24rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .grid {
+        width: 22rem;
     }
 }
 
