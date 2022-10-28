@@ -61,39 +61,43 @@ body {
 .grid__row-button {
     background-color: hsl(0, 0%, 95%);
     margin-left: 2rem;
-    border: 1px solid white;
+    border: .15rem solid white;
     border-radius: 2rem;
     width: fit-content;
+    font-weight: 600;
     text-align: center;
     padding: 1rem 2rem 1rem 2rem;
 
     cursor: pointer;
 
-    color: black; /* test */
+    color: #000;
+    mix-blend-mode: screen;
 }
 .grid__row-button:hover {
-    
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
 }
 
+@media only screen and (max-width: 375px) {
+    body {
+        height: auto;
+    }
 
+    .grid {
+        width: 22rem;
+        display: block;
+    }
 
+    .grid__column {
+        padding: 1rem 1.9rem 2rem 2rem;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .grid__row-description {
+        padding: 2rem 2rem 0rem 2rem;
+    }
+}
 
 /* Given footer */
-.attribution { color: black;font-size: 11px; text-align: center; }
+.attribution { color: black; padding-top: 1rem; font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
